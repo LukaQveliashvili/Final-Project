@@ -42,13 +42,13 @@ header {
 
 /* Home section */
 
-section {
+.home {
   padding: 20px 7%;
 }
 
 .M-img {
   position: absolute;
-  top: 137px;
+  top: 90px;
   left: 0;
   width: 100%;
   height: calc(100% - 80px);
@@ -67,4 +67,33 @@ div a {
   position: relative;
   color: white;
   line-height: 50px;
+}
+.btn {
+  position: relative;
+  display: flex;
+  width: 88px;
+  height: 48px;
+  flex-shrink: 0;
+  padding: 1px 80%;
+}
+p {
+  margin-left: 5px;
+  margin-top: 7px;
+  color: #ffff;
+  font-size: 20px;
+}
+.home-btn {
+  margin-bottom: 65px;
+}
+.home-btn:hover {
+  background: var(--bg-color);
+  transform: scale(1);
+}
+h2 {
+  padding: 20px 10%;
+}
+
+.container {
+  padding: 20px 7%;
+  background: linear-gradient(180deg, #00beac 0%, rgba(0, 190, 172, 0) 100%);
 }
