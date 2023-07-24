@@ -5,7 +5,9 @@
 }
 
 /* navbar */
-
+body {
+  overflow-x: hidden;
+}
 header {
   position: fixed;
   top: 0;
