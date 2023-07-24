@@ -92,8 +92,33 @@ p {
 h2 {
   padding: 20px 10%;
 }
-
 .container {
   padding: 20px 7%;
   background: linear-gradient(180deg, #00beac 0%, rgba(0, 190, 172, 0) 100%);
+}
+h3 {
+  font-size: 100px;
+  position: relative;
+  color: #ffc700;
+  font-family: "Satisfy";
+  padding: 230px 44%;
+}
+h4 {
+  font-size: 100px;
+  color: #ffff;
+  padding: 30%;
+  position: relative;
+  margin-top: -50%;
+}
+.P-text {
+  font-size: 20px;
+  color: #ffff;
+  padding: 30%;
+  position: relative;
+  margin-top: -57%;
+  word-spacing: 6px;
+  text-align: center;
+  margin-right: 10px;
+  line-height: 23px;
+  padding-left: 27%;
 }
