@@ -55,9 +55,9 @@ header {
   cursor: pointer;
   display: none;
 }
-.sticky .logo {
+/* .sticky .logo {
   color: var(--text-color);
-}
+} */
 .sticky.navbar a {
   color: var(--text-color);
 }
