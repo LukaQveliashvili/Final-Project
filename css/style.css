@@ -26,13 +26,13 @@ header {
   justify-content: space-between;
   padding: 30px 8%;
   z-index: 100;
+  transition: background 0.3s ease, padding 0.3s ease, box-shadow 0.3s ease;
 }
 
 .logo {
   font-size: 41px;
-  color: #488b69;
+  color: #fff;
   letter-spacing: 2px;
-  /* font-family: "Satisfy"; */
   font-family: "Cinzel", serif;
 }
 .S-img {
@@ -47,7 +47,6 @@ header {
   font-size: 17px;
   padding: 10px 21px;
   margin-left: 5px;
-  color: var(--text-color);
   font-family: "Lato", sans-serif;
 }
 .navbar a:hover {
@@ -63,15 +62,15 @@ header {
   cursor: pointer;
   display: none;
 }
-/* .sticky .logo {
+.sticky .logo {
   color: var(--text-color);
-} */
+}
 .sticky.navbar a {
   color: var(--text-color);
 }
 header.sticky {
-  /* background: var(--bg-color); */
-  padding: 30px 8%;
+  background: var(--bg-color);
+  padding: 15px 10%;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
@@ -86,40 +85,32 @@ header.sticky {
   position: relative;
   width: 100%;
   height: 100vh;
-  /* background: url(../images/84689.jpg); */
 }
 
 .M-img {
   position: absolute;
-  top: 90px;
+  top: 0px;
   left: 0;
   width: 100%;
-  height: calc(100% - 80px);
+  height: calc(111% - 80px);
   object-fit: cover;
+  filter: brightness(87%);
 }
 
 h1 {
-  font-size: 130px;
+  font-size: 100px;
   position: relative;
-  color: #488b69;
-  /* font-family: "Satisfy"; */
-  font-family: "Courgette", cursive;
-  margin-top: 260px;
+  color: white;
+  font-family: "Noto Serif JP", serif;
+  margin-top: 240px;
 }
 
 .a-J {
-  font-size: 170px;
+  font-size: 100px;
   position: relative;
   color: white;
-  /* font-family: "Kite One", sans-serif; */
-  font-family: "Cinzel", serif;
-}
-
-p {
+  font-family: "Noto Serif JP", serif;
   margin-left: 5px;
-  margin-top: 7px;
-  color: #ffff;
-  font-size: 20px;
 }
 
 .container {
@@ -135,7 +126,6 @@ h3 {
   font-family: "Satisfy";
   padding: 230px 44%;
 }
-
 h4 {
   font-size: 100px;
   color: #ffff;
@@ -153,11 +143,17 @@ h4 {
   margin-top: -57%;
   word-spacing: 6px;
   text-align: center;
-  margin-right: 10px;
+  margin-right: 1px;
   line-height: 23px;
-  padding-left: 27%;
+  padding-left: 29%;
 }
-
+#menu-icon {
+  color: var(--bg-color);
+  font-size: 35px;
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
 /* Destination */
 
 .destination {
@@ -194,9 +190,10 @@ h4 {
 .content p {
   position: absolute;
   font-size: 15px;
-  left: 15px;
+  left: 17px;
   bottom: 30px;
   letter-spacing: 2px;
+  color: white;
 }
 
 .content img:hover {
@@ -207,12 +204,7 @@ h4 {
 
 /* gallery-section */
 
-.package {
-  background: #f5fffe;
-}
-.more {
-  margin-left: -70px;
-}
+/* Contact */
 
 /* Footer */
 
@@ -232,13 +224,6 @@ a {
   line-height: 40px;
   margin-left: 30px;
 }
-/* .bxl-facebook {
-  width: 23px;
-  font-size: 20px;
-}
-.bxl-instagram {
-  font-size: 20px;
-} */
 h2 {
   color: white;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -262,13 +247,13 @@ h2 {
   background-color: #ff7f50;
 }
 .list h2 {
-  font-size: 18px;
+  font-size: 17px;
   margin-bottom: 30px;
   position: relative;
 }
 .list ul li a {
   color: #ffffffbf;
-  font-size: var(--p-font);
+  font-size: 15px;
   display: block;
   transition: 0.3s;
 }
@@ -280,7 +265,6 @@ h2 {
   height: 35px;
   width: 35px;
   background: var(--bg-color);
-  color: #ff7f50;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -289,12 +273,77 @@ h2 {
   transition: 0.3;
   margin-right: 10px;
 }
+.bxl-facebook {
+  color: #0e8ef2;
+}
+.bxl-instagram {
+  color: #ff105b;
+}
+.social {
+  margin-top: 20px;
+  margin-left: -2px;
+}
 .social a:hover {
   transform: scale(1.1);
 }
 .end-text {
   text-align: center;
+  margin-top: -10px;
 }
 .e-text {
   font-size: 15px;
+  color: white;
+}
+.tbc {
+  width: 100px;
+}
+.tbc-img {
+  margin-top: 20px;
+  margin-left: -5px;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 1400px) {
+  header {
+    padding: 17px 3%;
+    transition: 0.2s;
+  }
+  header.sticky {
+    padding: 10px 3%;
+    transition: 0.2s;
+  }
+  section {
+    padding: 80px 3%;
+    transition: 0.2s;
+  }
+  :root {
+    --big-font: 4.5rem;
+    --h2-font: 2.3rem;
+    --p-font: 1rem;
+    transition: 0.2s;
+  }
+}
+
+@media (max-width: 1040px) {
+  #menu-icon {
+    display: block;
+  }
+  .stick #menu-icon {
+    color: var(--text-color);
+  }
+  .home {
+    height: 88vh;
+  }
+  .navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 270px;
+    height: 120vh;
+    background: #1067cc;
+    display: flex;
+    flex-direction: column;
+  }
 }
