@@ -31,7 +31,6 @@ header {
 
 .logo {
   font-size: 41px;
-  color: #fff;
   letter-spacing: 2px;
   font-family: "Cinzel", serif;
 }
@@ -96,7 +95,6 @@ header.sticky {
   object-fit: cover;
   filter: brightness(87%);
 }
-
 h1 {
   font-size: 100px;
   position: relative;
@@ -154,6 +152,7 @@ h4 {
   cursor: pointer;
   display: none;
 }
+
 /* Destination */
 
 .destination {
@@ -166,6 +165,7 @@ h4 {
 }
 .content {
   position: relative;
+  margin-bottom: 100px;
 }
 
 .content img {
@@ -202,16 +202,11 @@ h4 {
   cursor: pointer;
 }
 
-/* gallery-section */
-
-/* Contact */
-
 /* Footer */
 
 .contact {
   background: #003531;
   width: 1519px;
-  height: 432px;
 }
 
 a {
@@ -230,11 +225,12 @@ h2 {
 }
 
 .footer {
-  padding: 40px 20%;
+  padding: 20px 0;
 }
 
 .list {
-  width: 275px;
+  width: 28%;
+  margin-left: 70px;
 }
 
 .list h2::before {
@@ -287,8 +283,8 @@ h2 {
   transform: scale(1.1);
 }
 .end-text {
-  text-align: center;
-  margin-top: -10px;
+  margin-left: -110px;
+  margin-top: 80px;
 }
 .e-text {
   font-size: 15px;
@@ -299,7 +295,7 @@ h2 {
 }
 .tbc-img {
   margin-top: 20px;
-  margin-left: -5px;
+  margin-left: 70px;
 }
 html {
   scroll-behavior: smooth;
@@ -330,7 +326,7 @@ html {
   #menu-icon {
     display: block;
   }
-  .stick #menu-icon {
+  .sticky #menu-icon {
     color: var(--text-color);
   }
   .home {
@@ -339,11 +335,46 @@ html {
   .navbar {
     position: absolute;
     top: 0;
-    right: 0;
+    right: -100%;
     width: 270px;
     height: 120vh;
-    background: #1067cc;
+    background: gray;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding: 15px 30px;
+    transition: 0.5s all;
+  }
+  .navbar a {
+    display: block;
+    margin: 1.2rem 0;
+  }
+  .sticky .navbar a {
+    color: var(--bg-color);
+  }
+  .navbar a:hover {
+    color: var(--text-color);
+  }
+  .open {
+    right: 0;
+  }
+  .list {
+    width: 510%;
+    margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 575px) {
+  .list {
+    width: 100%;
+  }
+  :root {
+    --big-font: 3.8rem;
+    --h2-font: 1.8rem;
+    transition: 0.2s;
+  }
+  .home {
+    height: 85vh;
+    transition: 0.2s;
   }
 }
